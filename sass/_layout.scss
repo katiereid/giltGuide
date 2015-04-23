@@ -12,3 +12,63 @@ li {
 main {
   padding: .5em;
 }
+
+.grid-container {
+  @include outer-container(100%);
+}
+
+.grid-container li {
+  margin: .5em;
+}
+
+.grid1 {
+  @include span-columns(1);
+}
+
+.grid2 {
+  @include span-columns(2);
+}
+
+.grid3 {
+  @include span-columns(3);
+}
+
+.grid4 {
+  @include span-columns(4);
+}
+
+.grid5 {
+  @include span-columns(5);
+}
+
+.grid6 {
+  @include span-columns(6);
+}
+
+.grid7 {
+  @include span-columns(7);
+}
+
+.grid8 {
+  @include span-columns(8);
+}
+
+.grid9 {
+  @include span-columns(9);
+}
+
+.grid10 {
+  @include span-columns(10);
+}
+
+.grid11 {
+  @include span-columns(11);
+}
+
+.grid12 {
+  @include span-columns(12);
+}
+
+.nonFloat {
+  float: none;
+}

@@ -427,6 +427,12 @@ li {
 footer {
   color: #b8b8b8; }
 
+.grid-container li {
+  color: #737373;
+  background-color: #f9f8f6;
+  border: 3px solid #b8b8b8;
+  border-radius: 4px; }
+
 body {
   font-family: applegothic; }
 
@@ -444,6 +450,9 @@ footer {
   font-size: 1.618em;
   text-align: center; }
 
+.grid-container {
+  text-align: center; }
+
 header {
   padding: .5em; }
 
@@ -453,5 +462,116 @@ li {
 
 main {
   padding: .5em; }
+
+.grid-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .grid-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.grid-container li {
+  margin: .5em; }
+
+.grid1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%; }
+  .grid1:last-child {
+    margin-right: 0; }
+
+.grid2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  .grid2:last-child {
+    margin-right: 0; }
+
+.grid3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .grid3:last-child {
+    margin-right: 0; }
+
+.grid4 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .grid4:last-child {
+    margin-right: 0; }
+
+.grid5 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .grid5:last-child {
+    margin-right: 0; }
+
+.grid6 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .grid6:last-child {
+    margin-right: 0; }
+
+.grid7 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  .grid7:last-child {
+    margin-right: 0; }
+
+.grid8 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .grid8:last-child {
+    margin-right: 0; }
+
+.grid9 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%; }
+  .grid9:last-child {
+    margin-right: 0; }
+
+.grid10 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%; }
+  .grid10:last-child {
+    margin-right: 0; }
+
+.grid11 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 91.4702%; }
+  .grid11:last-child {
+    margin-right: 0; }
+
+.grid12 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .grid12:last-child {
+    margin-right: 0; }
+
+.nonFloat {
+  float: none; }
 
 /*# sourceMappingURL=app.css.map */

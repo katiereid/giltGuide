@@ -39,6 +39,56 @@ block content
     | Sass so it keeps the HTML a little cleaner. To learn more about Neat and how it is used check out
     a(href='http://neat.bourbon.io/')  neat's site.
 
+  p To apply grid styling first an outer-container must be set and then the appropriately number of span-columns should be added to that element or class.
+    | For example:
+
+    pre
+      code.language-css.
+        .grid-container {
+          @include outer-container(100%);
+        }
+
+        grid1 {
+          @include span-columns(1);
+        }
+
+        .grid2 {
+          @include span-columns(2);
+        }
+
+        .grid3 {
+          @include span-columns(3);
+        }
+
+  p The results of the above code, plus the other 9 columns, would render like this:
+
+    ul.grid-container
+
+      li.grid1.nonFloat 1
+
+      li.grid2.nonFloat 2
+
+      li.grid3.nonFloat 3
+
+      li.grid4.nonFloat 4
+
+      li.grid5.nonFloat 5
+
+      li.grid6.nonFloat 6
+
+      li.grid7.nonFloat 7
+
+      li.grid8 8
+
+      li.grid9 9
+
+      li.grid10 10
+
+      li.grid11 11
+
+      li.grid12 12
+
+
 
 
 
