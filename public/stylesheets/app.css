@@ -433,6 +433,11 @@ footer {
   border: 3px solid #b8b8b8;
   border-radius: 4px; }
 
+.smallgrid1 {
+  background-color: #c98702;
+  border: 3px solid #737373;
+  color: black; }
+
 body {
   font-family: applegothic; }
 
@@ -456,7 +461,7 @@ footer {
 header {
   padding: .5em; }
 
-li {
+nav li {
   padding: .4em;
   margin: .5em; }
 
@@ -473,7 +478,8 @@ main {
     display: table; }
 
 .grid-container li {
-  margin: .5em; }
+  padding: .4em;
+  margin-top: .4em; }
 
 .grid1 {
   float: left;
@@ -569,6 +575,51 @@ main {
   margin-right: 2.35765%;
   width: 100%; }
   .grid12:last-child {
+    margin-right: 0; }
+
+.smallgrid1 {
+  float: left;
+  display: block;
+  margin-right: 10.1484%;
+  width: 26.56773%;
+  padding: .5em; }
+  .smallgrid1:last-child {
+    margin-right: 0; }
+
+.grid4shift1 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 8.5298%; }
+  .grid4shift1:last-child {
+    margin-right: 0; }
+
+.grid4shift2 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 17.05961%; }
+  .grid4shift2:last-child {
+    margin-right: 0; }
+
+.grid4shift3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 25.58941%; }
+  .grid4shift3:last-child {
+    margin-right: 0; }
+
+.grid4shift4 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 34.11922%; }
+  .grid4shift4:last-child {
     margin-right: 0; }
 
 .nonFloat {
