@@ -5,24 +5,77 @@ body {
 }
 
 header {
-  font-size: 2.618em;
+  font-size: $largest-font;
 }
 
 nav {
-  font-size: 1.818em;
+  font-size: $large-font;
   text-align: center;
 }
 
 main {
-  font-size: 1.618em;
+  font-size: $large-font;
 }
 
 footer {
-  font-size: 1.618em;
+  font-size: $large-font;
   text-align: center;
 }
 
 .grid-container {
   text-align: center;
+}
+
+.fontDiv {
+  border: 2px solid $gray-light;
+  background-color: $beige;
+  padding: .5em;
+  margin-top: .8em;
+  margin-bottom: .8em;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-family: $logo-font;
+  font-size: $largest-font;
+}
+
+.primary-font {
+  font-family: $primary-font;
+}
+
+.primary-font-bold {
+  font-family: $primary-font;
+  font-weight: 700;
+}
+
+.secondary-font {
+  color: $gray-dark;
+  font-family: $secondary-font;
+}
+
+.italic-font {
+  font-family: $italic-font;
+  font-style: italic;
+}
+
+.largest-font {
+  font-size: $largest-font;
+}
+
+.large-font {
+  font-size: $large-font;
+}
+
+.regular-font {
+  font-size: $regular-font;
+}
+
+.small-font {
+  font-size: $small-font;
+}
+
+.smallest-font {
+  font-size: $smallest-font;
 }
 

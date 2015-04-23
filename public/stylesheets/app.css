@@ -417,7 +417,7 @@ html {
 
 header {
   background-color: #c98702;
-  color: white; }
+  color: black; }
 
 li {
   background-color: #b8b8b8;
@@ -426,6 +426,9 @@ li {
 
 footer {
   color: #b8b8b8; }
+
+.headerStyle {
+  border-bottom: 2px solid #b8b8b8; }
 
 .grid-container li {
   color: #737373;
@@ -438,6 +441,34 @@ footer {
   border: 3px solid #737373;
   color: black; }
 
+.colorSection {
+  margin: 1em; }
+
+.colorDiv {
+  border: 3px solid #b8b8b8;
+  border-radius: 4px;
+  padding: 1em;
+  margin: .5em; }
+
+.white {
+  background-color: white; }
+
+.black {
+  color: white;
+  background-color: black; }
+
+.gray-light {
+  background-color: #b8b8b8; }
+
+.gray-dark {
+  background-color: #737373; }
+
+.beige {
+  background-color: #f9f8f6; }
+
+.accent {
+  background-color: #c98702; }
+
 body {
   font-family: applegothic; }
 
@@ -445,7 +476,7 @@ header {
   font-size: 2.618em; }
 
 nav {
-  font-size: 1.818em;
+  font-size: 1.618em;
   text-align: center; }
 
 main {
@@ -458,6 +489,48 @@ footer {
 .grid-container {
   text-align: center; }
 
+.fontDiv {
+  border: 2px solid #b8b8b8;
+  background-color: #f9f8f6;
+  padding: .5em;
+  margin-top: .8em;
+  margin-bottom: .8em; }
+
+.logo {
+  text-transform: uppercase;
+  font-family: "Judson", serif;
+  font-size: 2.618em; }
+
+.primary-font {
+  font-family: "Droid Sans", sans-serif; }
+
+.primary-font-bold {
+  font-family: "Droid Sans", sans-serif;
+  font-weight: 700; }
+
+.secondary-font {
+  color: #737373;
+  font-family: "Josefin Sans", sans-serif; }
+
+.italic-font {
+  font-family: Georgia;
+  font-style: italic; }
+
+.largest-font {
+  font-size: 2.618em; }
+
+.large-font {
+  font-size: 1.618em; }
+
+.regular-font {
+  font-size: 1em; }
+
+.small-font {
+  font-size: 0.618em; }
+
+.smallest-font {
+  font-size: 0.382em; }
+
 header {
   padding: .5em; }
 
@@ -465,8 +538,15 @@ nav li {
   padding: .4em;
   margin: .5em; }
 
+p {
+  margin-top: 1.618em;
+  margin-bottom: 1.618em; }
+
 main {
   padding: .5em; }
+
+.headerStyle {
+  padding-bottom: .5em; }
 
 .grid-container {
   max-width: 100%;

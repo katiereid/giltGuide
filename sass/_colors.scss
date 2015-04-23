@@ -2,7 +2,7 @@
 
 header {
   background-color: $primary-accent;
-  color: $white;
+  color: $black;
 }
 
 li {
@@ -13,6 +13,10 @@ li {
 
 footer {
   color: $gray-light;
+}
+
+.headerStyle {
+  border-bottom: 2px solid $gray-light;
 }
 
 .grid-container li {
@@ -27,3 +31,41 @@ footer {
   border: 3px solid $gray-dark;
   color: $black;
 }
+
+.colorSection {
+  margin: 1em;
+}
+
+.colorDiv {
+  border: 3px solid $gray-light;
+  border-radius: 4px;
+  padding: 1em;
+  margin: .5em;
+}
+
+.white {
+  background-color: $white;
+}
+
+.black {
+  color: $white;
+  background-color: $black;
+}
+
+.gray-light {
+  background-color: $gray-light;
+}
+
+.gray-dark {
+  background-color: $gray-dark;
+}
+
+.beige {
+  background-color: $beige;
+}
+
+.accent {
+  background-color: $primary-accent;
+}
+
+

@@ -2,29 +2,176 @@ extends base
 
 block content
 
-  h1 Typography and Colors Page
-  p Wayfarers leggings flannel, asymmetrical raw denim dreamcatcher squid Thundercats.
-    | Kogi PBR plaid flexitarian four loko, squid Odd Future put a bird on it skateboard.
-    | Before they sold out Banksy mixtape pug sartorial vegan. Literally post-ironic
-    | slow-carb, cold-pressed seitan keffiyeh semiotics mustache wolf retro gluten-free.
-    | Brooklyn tattooed pug, tote bag selvage cray craft beer locavore hella tousled
-    |mixtape.
+  h1.headerStyle Typography and Colors
 
-  p Scenester Kickstarter small batch, readymade +1 quinoa lumbersexual Banksy beard
-    | squid. You probably haven't heard of them seitan direct trade retro.
+  h2 Colors
 
-  p Gastropub vegan cray, Odd Future trust fund gluten-free 8-bit. Yr iPhone
-    | leggings, organic art party beard fingerstache +1 banh mi bitters occupy
-    | cold-pressed fashion axe direct trade lomo. Next level actually PBR Brooklyn.
-    | PBR mustache narwhal beard, viral Marfa keytar banh mi seitan mixtape. Bushwick
-    | authentic slow-carb fashion axe, pickled deep v Truffaut Williamsburg fingerstache
-    | tilde food truck. Tilde pour-over viral organic leggings vegan, PBR bespoke
-    | whatever sriracha kitsch. Vegan wolf food truck post-ironic brunch.
+  p Gilt keeps things pretty clean and simple when it comes to colors. It's important
+    | user's attention goes to the sales and isn't distracted by many colors. This is
+    | why Gilt uses mainly shades white and black and a main accent color. Below are the colors
+    | with what each's variable name should be.
 
-  p Kickstarter try-hard organic, sartorial bespoke cray flexitarian you probably
-    | haven't heard of them narwhal PBR. 3 wolf moon vinyl migas High Life pug. Tote
-    | bag vegan taxidermy, pork belly Austin gluten-free cred locavore church-key.
-    | Pork belly chillwave viral Austin. Umami banjo Neutra seitan yr, meh cred direct
-    | trade freegan disrupt Bushwick. Cronut ennui chia asymmetrical American Apparel.
-    | Kitsch butcher stumptown tofu Neutra ethical, chillwave Pinterest single-origin
-    | coffee.
+  section.grid_12.colorSection
+
+    div.grid_3.colorDiv.white $white
+
+    div.grid_3.colorDiv.black $black
+
+    div.grid_3.colorDiv.gray-light $gray-light
+
+    div.grid_3.colorDiv.gray-dark $gray-dark
+
+    div.grid_3.colorDiv.beige $beige
+
+    div.grid_3.colorDiv.accent $primary-accent
+
+  p The variables should be stored in _variables.scss under the Colors folder. Following is a sample
+    | of how the colors should be stored with exact hex and rgb values. Additionally both the black and white have a version with
+    | 50% opacity as this used occasionally on Gilt's site.
+
+    pre
+      code.language-css.
+
+        $white: rgb(255, 255, 255);
+
+        $white-opacity: rgba(255, 255, 255, .5);
+
+        $black: rgb(0, 0, 0);
+
+        $black-opacity: rgba(0, 0, 0, .5);
+
+        $gray-light:rgb(184,184,184);
+
+        $gray-dark:#737373;
+
+        $beige:#f9f8f6;
+
+        $primary-accent:#c98702;
+
+  h2 Typography
+
+  p There a few fonts Gilt uses and they can be combined with the above
+    | colors to make quite a few variations. The variables can be saved in a _variables.scss
+    | stylesheet within a Typography folder like this:
+
+    pre
+      code.language-css.
+
+        $primary-font: 'Droid Sans', sans-serif;
+
+        $logo-font: 'Judson', serif;
+
+        $italic-font: 'Georgia', italic;
+
+        $secondary-font: 'Josefin Sans', sans-serif;
+
+  p First off is the Gilt's logo font, Judson. This font should not be used on anything except
+    | the Gilt logo. It is always all uppercase.
+
+    div.fontDiv
+
+      h1.logo Gilt
+
+    pre
+      code.language-css.
+
+        .logo {
+          text-transform: uppercase;
+          font-family: $logo-font;
+        }
+
+  p Gilt's main font that is used most often is Droid Sans. It is generally used
+    | at regular weight but in certain situations is used in bold (font-weigh is then added to the code).
+
+    div.fontDiv
+
+      p.primary-font WOMEN MEN BABY&amp;KIDS HOME CITY TRAVEL
+
+      p.primary-font-bold WOMEN MEN BABY&amp;KIDS HOME CITY TRAVEL
+
+    pre
+      code.language-css.
+        .primary-font {
+          font-family: $primary-font;
+        }
+
+        .primary-font-bold {
+          font-family: $primary-font;
+          font-weight: 700;
+        }
+
+  p Gilt also uses Josefin Sans on occasion. It is used as a header font for
+    | new sections on a page. It is almost always displayed in the $gray-dark color and with a white background.
+
+    div.fontDiv
+
+      h2.secondary-font Today's New Sales
+
+    pre
+      code.language-css.
+
+        .secondary-font {
+          font-family: $secondary-font;
+        }
+
+  p Last but not least is the font Gilt uses when things are to be in italics. Instead of
+    | italicizing their main font, Gilt uses Georgia in italics. Font-style will need to be added whenever
+    | Georgia is used.
+
+    div.fontDiv
+
+      p.italic-font Easy-to-pack tunics, sundresses, and more from the go-to free-spirited brand
+
+    pre
+      code.language-css.
+
+        .italic-font {
+          font-family: $italic-font;
+          font-style: italic;
+        }
+
+  p In terms of font-size, Gilt uses the golden-ratio to determine
+    | font sizes and they are then stored as variables.
+
+    pre
+      code.language-css.
+
+        $largest-font: 2.618em;
+
+        $large-font: 1.618em;
+
+        $regular-font: 1em;
+
+        $small-font: .618em;
+
+        $smallest-font: .382em;
+
+  p A visualization of the different sizes:
+
+    div.fontDiv
+
+      p.largest-font Largest Font
+
+      p.large-font Large Font
+
+      p.regular-font Regular Font
+
+      p.small-font Small Font
+
+      p.smallest-font Smallest Font
+
+  p That covers the basics of the type and color guidelines that Gilt uses.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
