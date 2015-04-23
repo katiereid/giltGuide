@@ -1,5 +1,16 @@
 @import "colors/_manifest";
 
-.ssktn {
-  color: $accent-color;
+header {
+  background-color: $primary-accent;
+  color: $white;
+}
+
+li {
+  background-color: $gray-light;
+  border: 2px solid $gray-dark;
+  color: $beige;
+}
+
+footer {
+  color: $gray-light;
 }

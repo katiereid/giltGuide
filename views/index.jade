@@ -1,26 +1,18 @@
-doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='stylesheets/app.css')
-  body
-    header
-      h1 Gilt Guide: A Style Guide for Gilt
-  nav
-    ul
-      li
-        a(href="/layout") Scaffolding and Layout
-      li
-        a(href="/typography") Typography and Colors
-      li
-        a(href="/forms") Forms and Buttons
-      li
-        a(href="/nav") Navigation
-      li
-        a(href="/modules") Modules
+extends base
 
-  block content
+block content
 
-  footer
-    p ©Katie Reid 2015
+  h1 A Style Guide for Gilt
+
+  p The HTML and CSS guidlines for the styling of Gilt. Inluded is global stlying for the basic scaffolding and layout, for the colors
+    | and typography, then forms and buttons, the navigation, and all the other modules.
+
+  p The styling is described with both an example of the component and
+    | with sample code.
+
+  p This site was built using Node JS, Express, with Sass, my Bower package, Saskatoon, and of course,
+    | HTML (written in Jade). A seperate grid system was used to make this site and is part of a colleague's
+    | Bower package (SassyPants by Ben Spears) while Neat was used as the grid system for Gilt's styling.
+
+  a(href="www.gilt.com") Gilt
 

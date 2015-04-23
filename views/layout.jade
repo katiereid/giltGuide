@@ -1,5 +1,53 @@
-extends index
+extends base
 
 block content
 
-  p layout page
+  h1 Scaffolding and Layout
+
+  h2 Normalize
+
+  p To begin, Normalize is used to get a consistent base for each
+    | element before any styling begins. To learn more about Normalize, go here-
+    a(href='http://necolas.github.io/normalize.css/')  normalize.css.
+
+  p The Normalize files is kept in a _normailze.scss file.
+
+  p Normalize is a great start but there's a few more elements that needed to be added
+    | to the code in the normalize file. First, add these two delcarations to the "a"
+    | selector:
+
+  pre
+    code.language-css.
+      a {
+      color: inherit;
+      text-decoration: none;
+      }
+
+  p Then add the following code to normalize lists:
+
+  pre
+    code.language-css.
+      ul, ol {
+        list-style-type: none;
+      }
+
+  p Normalize is now set up! Moving on to the grid system for Gilt...
+
+  h2 Grid System
+
+  p Neat is the grid system used for Gilt's website. It's a grid that can be used in
+    | Sass so it keeps the HTML a little cleaner. To learn more about Neat and how it is used check out
+    a(href='http://neat.bourbon.io/')  neat's site.
+
+
+
+
+
+
+
+
+
+
+
+
+

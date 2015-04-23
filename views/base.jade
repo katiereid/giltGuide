@@ -3,21 +3,31 @@ html
   head
     title= title
     link(rel='stylesheet', href='stylesheets/app.css')
+    link(rel='stylesheet', href='stylesheets/prism.css' )
   body
     header
-      h1 Gilt Guide: A Style Guide for Gilt
-  nav
-    ul
-      li
-        a(href="/layout") Scaffolding and Layout
-      li
-        a(href="/typography") Typography and Colors
-      li
-        a(href="/forms") Forms and Buttons
-      li
-        a(href="/nav") Navigation
-      li
-        a(href="/modules") Modules
-  footer
-    p ©Katie Reid 2015
-    block content
+      h1
+        a(href="/") Gilt Guide: A Style Guide for Gilt
+    nav.grid_3
+      ul
+        li
+          a(href="/layout") Scaffolding and Layout
+        li
+          a(href="/typography") Typography and Colors
+        li
+          a(href="/forms") Forms and Buttons
+        li
+          a(href="/nav") Navigation
+        li
+          a(href="/modules") Modules
+
+    main.grid_7
+
+      block content
+
+    footer
+      p ©Katie Reid 2015
+
+    script(src='javascripts/prism.js')
+
+

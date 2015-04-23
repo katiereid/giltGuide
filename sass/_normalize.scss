@@ -88,6 +88,8 @@ template {
 
 a {
   background-color: transparent;
+  color: inherit;
+  text-decoration: none;
 }
 
 /**
@@ -424,4 +426,8 @@ table {
 td,
 th {
   padding: 0;
+}
+
+ul, ol {
+  list-style-type: none;
 }

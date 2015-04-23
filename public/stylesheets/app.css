@@ -76,7 +76,9 @@ template {
  * Remove the gray background color from active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
@@ -356,21 +358,100 @@ td,
 th {
   padding: 0; }
 
+ul, ol {
+  list-style-type: none; }
+
 html {
   box-sizing: border-box; }
 
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.ssktn {
-  color: #990033; }
+.grid_12 {
+  width: 100%;
+  float: left; }
 
-p {
-  font-family: applegothic;
-  font-size: 2em; }
+.grid_11 {
+  width: 91.666%;
+  float: left; }
 
-.ssktn {
-  font-family: blanch;
-  font-size: 2.3em; }
+.grid_10 {
+  width: 83.333%;
+  float: left; }
+
+.grid_9 {
+  width: 75%;
+  float: left; }
+
+.grid_8 {
+  width: 66.666%;
+  float: left; }
+
+.grid_7 {
+  width: 58.333%;
+  float: left; }
+
+.grid_6 {
+  width: 50%;
+  float: left; }
+
+.grid_5 {
+  width: 41.666%;
+  float: left; }
+
+.grid_4 {
+  width: 33.333%;
+  float: left; }
+
+.grid_3 {
+  width: 25%;
+  float: left; }
+
+.grid_2 {
+  width: 16.666%;
+  float: left; }
+
+.grid_1 {
+  width: 8.333%;
+  float: left; }
+
+header {
+  background-color: #c98702;
+  color: white; }
+
+li {
+  background-color: #b8b8b8;
+  border: 2px solid #737373;
+  color: #f9f8f6; }
+
+footer {
+  color: #b8b8b8; }
+
+body {
+  font-family: applegothic; }
+
+header {
+  font-size: 2.618em; }
+
+nav {
+  font-size: 1.818em;
+  text-align: center; }
+
+main {
+  font-size: 1.618em; }
+
+footer {
+  font-size: 1.618em;
+  text-align: center; }
+
+header {
+  padding: .5em; }
+
+li {
+  padding: .4em;
+  margin: .5em; }
+
+main {
+  padding: .5em; }
 
 /*# sourceMappingURL=app.css.map */
