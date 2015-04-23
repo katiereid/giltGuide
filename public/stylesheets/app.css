@@ -705,4 +705,76 @@ main {
 .nonFloat {
   float: none; }
 
+input {
+  margin: 1em; }
+
+.headerSearchDiv {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  .headerSearchDiv:last-child {
+    margin-right: 0; }
+
+.headerSearch {
+  float: left;
+  display: block;
+  margin-right: 5.85151%;
+  width: 78.8297%;
+  font-family: Georgia;
+  font-style: italic;
+  background-color: #b8b8b8;
+  color: black;
+  border: none;
+  padding: .3em; }
+  .headerSearch:last-child {
+    margin-right: 0; }
+
+.headerSearch:hover {
+  background-color: white; }
+
+.headerSearch:focus {
+  background-color: white; }
+
+.fullSearch {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 1.618em;
+  text-align: center;
+  background-color: #f9f8f6;
+  color: #737373;
+  padding: .8em; }
+  .fullSearch:last-child {
+    margin-right: 0; }
+
+.shop-add-button {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-color: #c98702;
+  color: white;
+  font-family: applegothic;
+  padding: .8em;
+  border-radius: .5em;
+  border: none; }
+  .shop-add-button:last-child {
+    margin-right: 0; }
+
+.searchSubmit {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  margin: 0;
+  border: none;
+  background-color: inherit;
+  color: inherit; }
+  .searchSubmit:last-child {
+    margin-right: 0; }
+
 /*# sourceMappingURL=app.css.map */

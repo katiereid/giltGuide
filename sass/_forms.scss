@@ -1,1 +1,61 @@
 @import "forms/_manifest";
+
+input {
+  margin: 1em;
+}
+
+.headerSearchDiv {
+  @include span-columns(5);
+}
+
+.headerSearch {
+  @include span-columns(4 of 5);
+  font-family: $italic-font;
+  font-style: italic;
+  background-color: $gray-light;
+  color: $black;
+  border: none;
+  padding: .3em;
+}
+
+.headerSearch:hover {
+  background-color: $white;
+}
+
+.headerSearch:focus {
+  background-color: $white;
+}
+
+.fullSearch {
+  @include span-columns(12);
+  font-family: $italic-font;
+  font-style: italic;
+  font-size: $large-font;
+  text-align: center;
+  background-color: $beige;
+  color: $gray-dark;
+  padding: .8em;
+}
+
+.shop-add-button {
+  @include span-columns(4);
+  background-color: $primary-accent;
+  color: $white;
+  font-family: $main-font;
+  padding: .8em;
+  border-radius: .5em;
+  border: none;
+}
+
+.searchSubmit {
+  @include span-columns(1);
+  margin:0;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+
+
+
+
