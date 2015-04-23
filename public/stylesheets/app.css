@@ -417,12 +417,7 @@ html {
 
 header {
   background-color: #c98702;
-  color: black; }
-
-li {
-  background-color: #b8b8b8;
-  border: 2px solid #737373;
-  color: #f9f8f6; }
+  color: white; }
 
 footer {
   color: #b8b8b8; }
@@ -473,7 +468,7 @@ body {
   font-family: applegothic; }
 
 header {
-  font-size: 2.618em; }
+  font-size: 1.618em; }
 
 nav {
   font-size: 1.618em;
@@ -535,12 +530,23 @@ header {
   padding: .5em; }
 
 nav li {
-  padding: .4em;
-  margin: .5em; }
+  padding: .6em;
+  margin: .7em; }
+
+.baseNav {
+  background-color: #b8b8b8;
+  border: 2px solid #737373;
+  color: #f9f8f6; }
+
+.baseNav:hover {
+  background-color: #737373;
+  color: white; }
 
 p {
-  margin-top: 1.618em;
-  margin-bottom: 1.618em; }
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
 main {
   padding: .5em; }
@@ -704,6 +710,66 @@ main {
 
 .nonFloat {
   float: none; }
+
+.headerNav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: black;
+  margin-bottom: .5em; }
+  .headerNav:last-child {
+    margin-right: 0; }
+
+.headerNav li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  border: none;
+  text-transform: uppercase;
+  margin: .2em;
+  padding: .2em;
+  font-size: 0.382em;
+  background-color: black;
+  color: white;
+  font-family: applegothic; }
+  .headerNav li:last-child {
+    margin-right: 0; }
+
+.catNav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  border: 8px solid #737373;
+  background-color: white;
+  margin: .8em; }
+  .catNav:last-child {
+    margin-right: 0; }
+
+.black-italic {
+  font-family: Georgia;
+  font-style: italic;
+  color: black;
+  text-align: left; }
+
+.gold-italic {
+  font-family: Georgia;
+  font-style: italic;
+  color: #c98702;
+  float: right; }
+
+.catNavItem {
+  font-family: "Droid Sans", sans-serif;
+  color: #737373;
+  background-color: white;
+  font-size: 0.382em;
+  text-align: left; }
+
+.catNavItem:hover {
+  color: white;
+  background-color: #c98702; }
 
 input {
   margin: 1em; }

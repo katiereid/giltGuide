@@ -1,1 +1,54 @@
 @import "modules/_manifest";
+
+.headerNav {
+  @include span-columns(12);
+  background-color: $black;
+  margin-bottom: .5em;
+}
+
+.headerNav li  {
+  @include span-columns(2 of 12);
+  border: none;
+  text-transform: uppercase;
+  margin: .2em;
+  padding: .2em;
+  font-size: $smallest-font;
+  background-color: $black;
+  color: $white;
+  font-family: $main-font;
+}
+
+.catNav {
+  @include span-columns(12);
+  border: 8px solid $gray-dark;
+  background-color: $white;
+  margin: .8em;
+}
+
+.black-italic {
+  font-family: $italic-font;
+  font-style: italic;
+  color: $black;
+  text-align: left;
+}
+
+.gold-italic {
+  font-family: $italic-font;
+  font-style: italic;
+  color: $primary-accent;
+  float: right;
+}
+
+.catNavItem {
+  font-family: $primary-font;
+  color: $gray-dark;
+  background-color: $white;
+  font-size: $smallest-font;
+  text-align: left;
+}
+
+.catNavItem:hover {
+  color: $white;
+  background-color: $primary-accent;
+}
+

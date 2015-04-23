@@ -5,13 +5,26 @@ header {
 }
 
 nav li {
-  padding: .4em;
-  margin: .5em;
+  padding: .6em;
+  margin: .7em;
+}
+
+.baseNav {
+  background-color: $gray-light;
+  border: 2px solid $gray-dark;
+  color: $beige;
+}
+
+.baseNav:hover {
+  background-color: $gray-dark;
+  color: $white;
 }
 
 p {
-  margin-top: 1.618em;
-  margin-bottom: 1.618em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 main {
