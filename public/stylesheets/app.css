@@ -468,17 +468,17 @@ body {
   font-family: applegothic; }
 
 header {
-  font-size: 1.618em; }
+  font-size: 1em; }
 
 nav {
-  font-size: 1.618em;
+  font-size: 1em;
   text-align: center; }
 
 main {
-  font-size: 1.618em; }
+  font-size: 1em; }
 
 footer {
-  font-size: 1.618em;
+  font-size: 1em;
   text-align: center; }
 
 .grid-container {
