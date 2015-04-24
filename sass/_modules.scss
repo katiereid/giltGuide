@@ -15,7 +15,7 @@
   font-size: $smallest-font;
   background-color: $black;
   color: $white;
-  font-family: $main-font;
+  font-family: $primary-font;
 }
 
 .catNav {
@@ -51,4 +51,177 @@
   color: $white;
   background-color: $primary-accent;
 }
+
+.giltLogo {
+  @include span-columns(2);
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: $logo-font;
+  font-size: $largest-font;
+}
+
+.giltHeader {
+  @include outer-container(100%);
+  background-color: $black;
+  color:$white;
+}
+
+.giltHeaderNav {
+  @include span-columns(7);
+  padding: 0;
+  margin-right: 0;
+}
+
+.giltHeaderList {
+  padding: 0;
+
+}
+
+.giltHeaderNav li {
+  @include span-columns(1 of 7);
+  margin-top: 5em;
+  text-transform: uppercase;
+  font-size: $smallest-font;
+}
+
+.giltHeaderNav li:hover {
+  border-bottom: 2px solid $primary-accent;
+}
+
+.giltHeaderSearch {
+  @include span-columns(3);
+  margin-top: 2em;
+  float: right;
+  font-family: $italic-font;
+  font-size: $smallest-font;
+  font-style: italic;
+  background-color: $gray-light;
+  color: $black;
+  border: none;
+  padding: .3em;
+}
+
+.giltHeaderSearch:hover {
+  background-color: $white;
+}
+
+.giltHeaderSearch:focus {
+  background-color: $white;
+}
+
+.cartImg {
+  @include span-columns (3);
+  margin-top: 2em;
+  float: right;
+  display: inline;
+}
+
+.giltFooter {
+  @include span-columns(12);
+  background-color: $black;
+  color: $white;
+  padding: .8em;
+}
+
+.footerNav {
+  @include span-columns (3);
+  font-family: $primary-font;
+  font-size: $regular-font;
+}
+
+.footerNav li {
+  margin: .3em;
+}
+
+.footerNav li:first-child {
+  font-weight: 700;
+}
+
+.footerNav li:hover {
+  border-bottom: 2px solid $white;
+}
+
+.copy {
+  display: inline-block;
+  float: none;
+  font-size: $smallest-font;
+}
+
+.featuredSaleSection {
+  @include span-columns(12);
+  padding: 1em;
+  background-image: url(../images/featuredSale.jpg);
+  background-repeat: no-repeat;
+}
+
+.featuredSaleContent {
+  @include span-columns(5);
+  @include shift(1 of 12);
+  padding: .8em;
+  color: $white;
+  background-color: $black-opacity;
+  border-radius: 1em;
+}
+
+.saleh1 {
+  font-family: $secondary-font;
+  font-size: $large-font;
+}
+
+.saleh2 {
+  font-family: $italic-font;
+  font-style: italic;
+  font-size: $small-font;
+}
+
+.shop-add-button-mod {
+  @include span-columns(2 of 5);
+  @include shift (1.5 of 5);
+  background-color: $primary-accent;
+  color: $white;
+  font-family: $main-font;
+  font-size: $small-font;
+  padding: .8em;
+  border-radius: .5em;
+  border: none;
+}
+
+.saleLink {
+  @include span-columns(5);
+  @include shift(1.5 of 5);
+  background-color: $black-opacity;
+}
+
+.saleLink:hover {
+  background-color: $primary-accent;
+}
+
+.saleHeader {
+  font: $primary-font;
+  font-size: $regular-font;
+  color: $white;
+  text-align: center;
+  padding: .3em;
+  margin: 0;
+}
+
+.saleLink img {
+  @include span-columns(12);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

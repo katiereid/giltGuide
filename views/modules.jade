@@ -2,29 +2,177 @@ extends base
 
 block content
 
-  h1 Modules Page
-  p Wayfarers leggings flannel, asymmetrical raw denim dreamcatcher squid Thundercats.
-    | Kogi PBR plaid flexitarian four loko, squid Odd Future put a bird on it skateboard.
-    | Before they sold out Banksy mixtape pug sartorial vegan. Literally post-ironic
-    | slow-carb, cold-pressed seitan keffiyeh semiotics mustache wolf retro gluten-free.
-    | Brooklyn tattooed pug, tote bag selvage cray craft beer locavore hella tousled
-    |mixtape.
+  h1.headerStyle Modules
 
-  p Scenester Kickstarter small batch, readymade +1 quinoa lumbersexual Banksy beard
-    | squid. You probably haven't heard of them seitan direct trade retro.
+  p The header module,  the featured sale module, the individual sale module within
+    | the group sale module, and the footer module make up Gilt's site as the
+    | most common modules.
 
-  p Gastropub vegan cray, Odd Future trust fund gluten-free 8-bit. Yr iPhone
-    | leggings, organic art party beard fingerstache +1 banh mi bitters occupy
-    | cold-pressed fashion axe direct trade lomo. Next level actually PBR Brooklyn.
-    | PBR mustache narwhal beard, viral Marfa keytar banh mi seitan mixtape. Bushwick
-    | authentic slow-carb fashion axe, pickled deep v Truffaut Williamsburg fingerstache
-    | tilde food truck. Tilde pour-over viral organic leggings vegan, PBR bespoke
-    | whatever sriracha kitsch. Vegan wolf food truck post-ironic brunch.
+  p The header always has the logo on the left, the header nav to right of the logo
+    | account information, the cart icon, and the search bar on the right. The
+    | background is black and the font is white, always. Code should match up with the code
+    | previously written for the logo, header nav, and header search bar. In addition there is
+    | a div where the user's account information goes.
 
-  p Kickstarter try-hard organic, sartorial bespoke cray flexitarian you probably
-    | haven't heard of them narwhal PBR. 3 wolf moon vinyl migas High Life pug. Tote
-    | bag vegan taxidermy, pork belly Austin gluten-free cred locavore church-key.
-    | Pork belly chillwave viral Austin. Umami banjo Neutra seitan yr, meh cred direct
-    | trade freegan disrupt Bushwick. Cronut ennui chia asymmetrical American Apparel.
-    | Kitsch butcher stumptown tofu Neutra ethical, chillwave Pinterest single-origin
-    | coffee.
+  header.giltHeader
+    h1.giltLogo Gilt
+    nav.giltHeaderNav
+      ul.giltHeaderList
+        li Women
+        li Men
+        li Baby &amp; Kids
+        li Home
+        li City
+        li Travel
+    img.cartImg(src="images/cartImg.png")
+    form
+      input.giltHeaderSearch(type='text', placeholder='Search')
+
+  p Note: for the header module this bit of code should be added so the category the
+    | user is hovering on will underline in the accent color.
+
+    pre
+      code.language-css.
+        .giltHeaderNav li:hover {
+          border-bottom: 2px solid $primary-accent;
+        }
+  p Now the footer. The footer is similar to the header in that it has a $black background and
+    | $white font. The footer is made up of another logo, a copyright, and then
+    | several lists. It should look like this:
+
+  footer.giltFooter
+    h1.giltLogo Gilt
+    ul.footerNav
+      li Company
+      li About
+      li Press
+      li Careers
+      li Tech
+      li Style Directory
+    ul.footerNav
+      li Customer Service
+      li FAQ/ Contact Us
+      li Return Policy
+      li Shipping &amp; Tax
+    ul.footerNav
+      li Website Terms of Use
+      li Privacy
+      li Security
+      li Terms of Service
+    p.copy © 2007 - 2015 GILT GROUPE, INC.
+      | ALL RIGHTS RESERVED.
+
+  p While the code looks like this:
+
+    pre
+      code.language-css.
+        .giltFooter {
+          @include span-columns(12);
+          background-color: $black;
+          color: $white;
+          padding: .8em;
+        }
+
+        .footerNav {
+          @include span-columns (3);
+          font-family: $primary-font;
+          font-size: $regular-font;
+        }
+
+        .footerNav li {
+          margin: .3em;
+        }
+
+        .footerNav li:first-child {
+          font-weight: 700;
+        }
+
+        .footerNav li:hover {
+          border-bottom: 2px solid $white;
+        }
+
+  p A featured sale is the sale that appears at the top of the main
+    | page (under the header, of course) and on each category's main
+    | sale page. This is the most popular sale or the sale we want users
+    | to shop in.
+
+    section.featuredSaleSection
+      div.featuredSaleContent
+        h1.saleh1 Choose Your Knives feat. Kyocera
+        h2.saleh2 Upgrade your culinary routine with these well-made essentials
+        button.shop-add-button-mod Shop this Sale
+
+  p Include the shop-add-button discussed previously and the rest of the code should look like this:
+
+  pre
+    code.language-css.
+      .featuredSaleSection {
+        @include span-columns(12);
+        padding: 1em;
+        background-image: url(../images/featuredSale.jpg);
+        background-repeat: no-repeat;
+      }
+
+      .featuredSaleContent {
+        @include span-columns(5);
+        @include shift(1 of 12);
+        padding: .8em;
+        color: $white;
+        background-color: $black-opacity;
+        border-radius: 1em;
+      }
+
+      .saleh1 {
+        font-family: $secondary-font;
+        font-size: $large-font;
+      }
+
+      .saleh2 {
+        font-family: $italic-font;
+        font-style: italic;
+        font-size: $small-font;
+      }
+  p An individual sale module is pretty simple. It's just an image with a
+    | header. It should link to the related sale.
+
+    div.fontDiv.grid_12
+      a.saleLink(href='http://www.gilt.com/sale/children/la-miniatura-for-girls-4494')
+        h1.saleHeader La Minatura for Girls
+        img(src='images/indiv-sale-img.jpg')
+
+    pre
+      code.language-css.
+        .saleLink {
+          @include span-columns(5);
+          @include shift(1.5 of 5);
+          background-color: $black-opacity;
+        }
+
+        .saleLink:hover {
+          background-color: $primary-accent;
+        }
+
+        .saleHeader {
+          font: $primary-font;
+          font-size: $regular-font;
+          color: $white;
+          text-align: center;
+          padding: .3em;
+          margin: 0;
+        }
+
+        .saleLink img {
+          @include span-columns(12);
+        }
+
+   p Use Neat combined with the indiviual sale modules to make a
+    | sale section. That's all for modules!
+
+
+
+
+
+
+
+
+

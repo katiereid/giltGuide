@@ -6,7 +6,7 @@ block content
 
   p Navigation for Gilt is divided into two parts. First, is the navigation that is
     | always visible to the user as part of the header. The categories are always the same and
-    | should remain that way, in $white and with the $main-font in all caps. The code is as follows:
+    | should remain that way, in $white and with the $primary-font in all caps. The code is as follows:
 
     pre
       code.language-css.
@@ -25,30 +25,22 @@ block content
           font-size: $small-font;
           background-color: $black;
           color: $white;
-          font-family: $main-font;
+          font-family: $primary-font;
         }
 
   p Rendering like this:
 
     nav.headerNav
-
       ul
-
         li Women
-
         li Men
-
         li Baby &amp; Kids
-
         li Home
-
         li City
-
         li Travel
 
   p The other navigation menu one will find on Gilt is the nav that pops
     | up when a user hovers over one of the categories in the header nav.
-    | Below is a sample of how the category-specific nav might look:
 
     p The code:
 
@@ -77,28 +69,17 @@ block content
     p A simple category-specific nav menu might look like this:
 
       nav.catNav
-
         ul.catNavList
-
           li.catNavItem.headerStyle
-
             span.black-italic Today's Sales
             span.gold-italic View all Sales
-
           li.catNavItem Free People
-
           li.catNavItem Christian Louboutin Shoes and Handbags
-
           li.catNavItem DL1961
-
           li.catNavItem Kate Somerville
-
           li.catNavItem 250 Key Spring Shoes
-
           li.catNavItem Designer Wedding Dresses
-
           li.catNavItem Elizabeth and James
-
           li.catNavItem Atwell
 
     p Other menus found on Gilt's site would be variations of the category-specific menu.

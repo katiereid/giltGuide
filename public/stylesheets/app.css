@@ -733,7 +733,7 @@ main {
   font-size: 0.382em;
   background-color: black;
   color: white;
-  font-family: applegothic; }
+  font-family: "Droid Sans", sans-serif; }
   .headerNav li:last-child {
     margin-right: 0; }
 
@@ -770,6 +770,203 @@ main {
 .catNavItem:hover {
   color: white;
   background-color: #c98702; }
+
+.giltLogo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Judson", serif;
+  font-size: 2.618em; }
+  .giltLogo:last-child {
+    margin-right: 0; }
+
+.giltHeader {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  color: white; }
+  .giltHeader::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.giltHeaderNav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  padding: 0;
+  margin-right: 0; }
+  .giltHeaderNav:last-child {
+    margin-right: 0; }
+
+.giltHeaderList {
+  padding: 0; }
+
+.giltHeaderNav li {
+  float: left;
+  display: block;
+  margin-right: 4.11092%;
+  width: 10.76207%;
+  margin-top: 5em;
+  text-transform: uppercase;
+  font-size: 0.382em; }
+  .giltHeaderNav li:last-child {
+    margin-right: 0; }
+
+.giltHeaderNav li:hover {
+  border-bottom: 2px solid #c98702; }
+
+.giltHeaderSearch {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-top: 2em;
+  float: right;
+  font-family: Georgia;
+  font-size: 0.382em;
+  font-style: italic;
+  background-color: #b8b8b8;
+  color: black;
+  border: none;
+  padding: .3em; }
+  .giltHeaderSearch:last-child {
+    margin-right: 0; }
+
+.giltHeaderSearch:hover {
+  background-color: white; }
+
+.giltHeaderSearch:focus {
+  background-color: white; }
+
+.cartImg {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-top: 2em;
+  float: right;
+  display: inline; }
+  .cartImg:last-child {
+    margin-right: 0; }
+
+.giltFooter {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: .8em; }
+  .giltFooter:last-child {
+    margin-right: 0; }
+
+.footerNav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 1em; }
+  .footerNav:last-child {
+    margin-right: 0; }
+
+.footerNav li {
+  margin: .3em; }
+
+.footerNav li:first-child {
+  font-weight: 700; }
+
+.footerNav li:hover {
+  border-bottom: 2px solid white; }
+
+.copy {
+  display: inline-block;
+  float: none;
+  font-size: 0.382em; }
+
+.featuredSaleSection {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  padding: 1em;
+  background-image: url(../images/featuredSale.jpg);
+  background-repeat: no-repeat; }
+  .featuredSaleSection:last-child {
+    margin-right: 0; }
+
+.featuredSaleContent {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  margin-left: 8.5298%;
+  padding: .8em;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1em; }
+  .featuredSaleContent:last-child {
+    margin-right: 0; }
+
+.saleh1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.618em; }
+
+.saleh2 {
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 0.618em; }
+
+.shop-add-button-mod {
+  float: left;
+  display: block;
+  margin-right: 5.85151%;
+  width: 36.4891%;
+  margin-left: 31.75545%;
+  background-color: #c98702;
+  color: white;
+  font-family: applegothic;
+  font-size: 0.618em;
+  padding: .8em;
+  border-radius: .5em;
+  border: none; }
+  .shop-add-button-mod:last-child {
+    margin-right: 0; }
+
+.saleLink {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  margin-left: 31.75545%;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .saleLink:last-child {
+    margin-right: 0; }
+
+.saleLink:hover {
+  background-color: #c98702; }
+
+.saleHeader {
+  font: "Droid Sans", sans-serif;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  padding: .3em;
+  margin: 0; }
+
+.saleLink img {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .saleLink img:last-child {
+    margin-right: 0; }
 
 input {
   margin: 1em; }
